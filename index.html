@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Title of the webpage -->
+    <title>Bootstrap demo</title>
+
+    <!-- Jquery - Linking to the Jquery from a CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Bootstrap CSS - Linking to the Bootstrap stylesheet from a CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons CSS - Linking to Bootstrap Icons from a CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+
+    <!-- Your custom stylesheet -->
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar with Bootstrap classes and your custom styling -->
+    <nav class="navbar-expand-lg py-2 position-fixed w-100 top-0 start-0">
+      <!-- Container for the navigation bar content -->
+      <div
+        class="container px-0 d-flex align-items-center justify-content-between"
+      >
+        <!-- Logo and navigation controls -->
+        <div
+          class="d-flex px-4 align-items-baseline align-items-lg-center justify-content-between nav-controls"
+        >
+          <!-- Logo with a link -->
+          <a
+            href="#"
+            class="text-primaryCss logo text-decoration-none d-flex align-items-center justify-content-center"
+          >
+            <span class="fw-semibold">WCM</span>
+            <p class="mb-0">arketplace</p>
+          </a>
+
+          <!-- Responsive navigation menu for smaller screens -->
+          <div
+            class="collapse navbar-collapse nav-menu-main"
+            id="navbarSupportedContent"
+          >
+            <!-- List of navigation items with dropdowns -->
+            <ul
+              class="list-unstyled d-flex align-items-lg-center align-items-start justify-content-start flex-lg-row flex-column gap-3 fw-medium mb-0"
+            >
+              <li class="d-flex align-items-center gap-1">
+                <!-- Support dropdown menu -->
+                <a
+                  class="text-decoration-none menu-list-items"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Support
+                  <span class="menu-list-icon"
+                    ><i class="bi bi-chevron-down"></i
+                  ></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item menu-list-items" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item menu-list-items" href="#"
+                      >Another action</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="d-flex align-items-center gap-1">
+                <a class="text-decoration-none menu-list-items" href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li class="d-flex align-items-center gap-1">
+                <a
+                  class="text-decoration-none menu-list-items"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Live Example
+                  <span class="menu-list-icon"
+                    ><i class="bi bi-chevron-down"></i></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item menu-list-items" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item menu-list-items" href="#"
+                      >Another action</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="d-flex align-items-center gap-1">
+                <a
+                  class="text-decoration-none menu-list-items"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Contact Us
+                  <span class="menu-list-icon"
+                    ><i class="bi bi-chevron-down"></i></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item menu-list-items" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item menu-list-items" href="#"
+                      >Another action</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Button to toggle the navigation menu on smaller screens -->
+          <button
+            class="bg-orange-css border-0 py-1 px-2 text-white d-block d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <!-- Additional navigation items on larger screens -->
+        <div
+          class="d-lg-flex d-none align-items-center justify-content-end gap-4"
+        >
+          <a class="menu-list-items text-decoration-none" href="#"
+            ><i class="bi bi-cart-fill"></i
+          ></a>
+          <a class="menu-list-items text-decoration-none" href="#">Sign in</a>
+          <a
+            class="menu-list-items py-2 px-4 bg-orange-css rounded-1 text-white fw-medium text-decoration-none"
+            href="#"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="h-auto pb-5">
+      <!-- Container for header content -->
+      <div
+        class="container d-flex justify-content-center align-items-center flex-column"
+      >
+        <!-- Main heading with styling -->
+        <h1 class="fs-1 mb-0 fw-semibold text-center text-wrap">
+          Build Any Marketplace in <br />
+          3 Simple Steps
+        </h1>
+
+        <!-- Call-to-action buttons -->
+        <div
+          class="my-4 d-flex align-items-center justify-content-center gap-3"
+        >
+          <!-- Primary action button -->
+          <a
+            class="py-2 d-block px-4 bg-orange-css rounded-1 text-white fw-medium text-decoration-none"
+            href="#"
+          >
+            Get Started
+          </a>
+
+          <!-- Secondary action button with a link -->
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center text-decoration-none text-sm text-secondaryCss fw-medium"
+          >
+            <p class="mb-0">View Live Example</p>
+            <span><i class="bi bi-arrow-right"></i></span>
+          </a>
+        </div>
+
+        <!-- Image and floating content section -->
+        <div class="position-relative">
+          <!-- Banner image -->
+          <img
+            class="header-banner"
+            src="./res/Header_Banner.png"
+            alt="Header_Banner"
+          />
+
+          <!-- Floating content visible on large screens -->
+          <div class="floating-content d-lg-block d-none">
+            <!-- Progress bar container -->
+            <div class="floating-content-progress">
+              <!-- Floating content end marker -->
+              <div class="floating-content-end">
+                <!-- Actual floating content -->
+                <div class="floating-content-contents">
+                  <!-- Text content within the floating section -->
+                  <p>Change marketplace</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Why-choose Section -->
+    <section class="why-choose">
+      <!-- Heading -->
+      <h1 class="text-capitalize text-center heading">
+        why <span class="fw-semibold">choose WCMp?</span>
+      </h1>
+
+      <!-- Subheading -->
+      <p class="text-center text-base fw-medium">
+        Only WCMp gives you a totally customizable solution
+      </p>
+
+      <!-- Container for the main content -->
+      <div
+        class="container border-black pt-4 pb-5 d-flex flex-column flex-md-row gap-5"
+      >
+        <!-- Left Column: Features and Achievements -->
+        <div class="why-choose-content">
+          <!-- Features Section -->
+          <h5 class="fw-semibold mb-3">Best customizable solution</h5>
+          <ul class="list-unstyled pb-1">
+            <!-- Individual Feature -->
+            <li
+              class="d-flex align-items-center justify-content-start gap-2 my-3"
+            >
+              <span class="pointer"></span>
+              <p class="m-0 text-sm fw-medium">
+                Build a user-friendly and attractive marketplace!
+              </p>
+            </li>
+            <li
+              class="d-flex align-items-center justify-content-start gap-2 my-3"
+            >
+              <span class="pointer"></span>
+              <p class="m-0 text-sm fw-medium">
+                Get automated commission disbursements
+              </p>
+            </li>
+            <li
+              class="d-flex align-items-center justify-content-start gap-2 my-3"
+            >
+              <span class="pointer"></span>
+              <p class="m-0 text-sm fw-medium">
+                Help your vendors to sell more with better features
+              </p>
+            </li>
+            <li
+              class="d-flex align-items-center justify-content-start gap-2 my-3"
+            >
+              <span class="pointer"></span>
+              <p class="m-0 text-sm fw-medium">
+                Split payment whenever a transaction happens
+              </p>
+            </li>
+          </ul>
+
+          <!-- Achievements Section -->
+          <h5 class="fw-semibold mb-3">Achievements</h5>
+          <div
+            class="d-flex justify-content-center align-items-center shadow-created rounded-3 overflow-hidden"
+          >
+            <!-- Individual Achievement Block -->
+            <div class="py-3 bg-white w-100">
+              <div
+                class="d-flex justify-content-center align-items-center flex-column border-end px-3"
+              >
+                <i class="bi bi-rocket-takeoff fs-2 text-orangeCss"></i>
+                <span class="text-base fw-semibold">2013</span>
+                <small class="text-sm fw-normal">Since</small>
+              </div>
+            </div>
+            <div class="py-3 bg-white w-100">
+              <div
+                class="d-flex justify-content-center align-items-center flex-column border-end px-3"
+              >
+                <i class="bi bi-shield-check fs-2 text-orangeCss"></i>
+                <span class="text-base fw-semibold">10,000+</span>
+                <small class="text-sm fw-normal">Trusted</small>
+              </div>
+            </div>
+            <div class="py-3 bg-white w-100">
+              <div
+                class="d-flex justify-content-center align-items-center flex-column border-end px-3"
+              >
+                <i class="bi bi-play-circle fs-2 text-orangeCss"></i>
+                <span class="text-base fw-semibold">5600</span>
+                <small class="text-sm fw-normal">Active</small>
+              </div>
+            </div>
+            <div class="py-3 bg-white w-100">
+              <div
+                class="d-flex justify-content-center align-items-center flex-column px-3"
+              >
+                <i class="bi bi-star fs-2 text-orangeCss"></i>
+                <span class="text-base fw-semibold">4.9</span>
+                <small class="text-sm fw-normal">Rating</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column: Image and Play Button -->
+        <div
+          class="why-choose-content position-relative d-flex justify-content-center align-items-start"
+        >
+          <!-- Image -->
+          <img
+            class="why-choose-content-img"
+            src="./res/Vector Smart Object.png"
+            alt="Vector Smart Object"
+          />
+
+          <!-- Play Button -->
+          <div class="why-choose-content-playBtn">
+            <button class="why-choose-content-playBtn-main">
+              <i class="bi fs-1 text-white bi-play-fill"></i>
+              <div class="play-btn-floating">
+                <p class="mb-0 text-xs">Play Video</p>
+                <div class="play-btn-floating-progress"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="w-fit mx-auto d-flex gap-2">
+        <!-- Primary Action Button -->
+        <a
+          class="py-2 d-block text-base w-fit px-4 bg-orange-css border- rounded-1 text-white fw-medium text-decoration-none"
+          href="#"
+        >
+          Get Started
+        </a>
+
+        <!-- Secondary Action Button -->
+        <a
+          class="py-2 d-flex justify-content-center border border-black align-items-center text-base w-fit px-4 rounded-1 text-black gap-1 fw-medium text-decoration-none"
+          href="#"
+        >
+          Compare <span><i class="bi bi-arrow-right"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Type Of MarketPlace Section -->
+    <section class="typeOf-marketPlace py-5">
+      <div class="container">
+        <!-- Heading -->
+        <h1 class="text-capitalize text-center heading">
+          What Type of Marketplace
+          <span class="fw-semibold">You Can Create</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-center text-base fw-medium">
+          Now you can build any marketplace with WCMp
+        </p>
+        <div class="pt-3">
+          <!-- Marketplace Type List -->
+          <ul
+            class="list-unstyled d-flex justify-content-center row-gap-lg-0 row-gap-2 flex-wrap align-items-center mb-0"
+          >
+            <!-- Product Marketplace -->
+            <li class="typeOf-marketPlace-list active px-2 pb-2">
+              <button
+                class="d-flex justify-content-center align-items-center gap-1 border-0 bg-transparent text-base"
+              >
+                <span class="text-orangeCss"
+                  ><img src="./res/Producticon.png" alt=""
+                /></span>
+                <p class="mb-0 fw-medium">Product Marketplace</p>
+              </button>
+            </li>
+            <!-- Rental Marketplace -->
+            <li class="typeOf-marketPlace-list px-2 pb-2">
+              <button
+                class="d-flex justify-content-center align-items-center gap-1 border-0 bg-transparent text-base"
+              >
+                <span class="text-orangeCss"
+                  ><img src="./res/Rentalicon.png" alt=""
+                /></span>
+                <p class="mb-0 fw-medium">Rental Marketplace</p>
+              </button>
+            </li>
+            <!-- Booking Marketplace -->
+            <li class="typeOf-marketPlace-list px-2 pb-2">
+              <button
+                class="d-flex justify-content-center align-items-center gap-1 border-0 bg-transparent text-base"
+              >
+                <span class="text-orangeCss"
+                  ><img src="./res/Bookingicon.png" alt=""
+                /></span>
+                <p class="mb-0 fw-medium">Booking Marketplace</p>
+              </button>
+            </li>
+            <!-- Subscription Marketplace -->
+            <li class="typeOf-marketPlace-list px-2 pb-2">
+              <button
+                class="d-flex justify-content-center align-items-center gap-1 border-0 bg-transparent text-base"
+              >
+                <span class="text-orangeCss"
+                  ><img src="./res/Subscriptionicon.png" alt=""
+                /></span>
+                <p class="mb-0 fw-medium">Subscription Marketplace</p>
+              </button>
+            </li>
+            <!-- More -->
+            <li class="typeOf-marketPlace-list px-2 pb-2">
+              <button
+                class="d-flex justify-content-center align-items-center gap-1 border-0 bg-transparent text-base"
+              >
+                <span class="text-orangeCss"
+                  ><img src="./res/Moreicon.png" alt=""
+                /></span>
+                <p class="mb-0 fw-medium">More</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="pt-3">
+          <!-- Marketplace Content -->
+          <div id="ProductMarketplace">
+            <div
+              class="d-flex flex-md-row flex-column gap-4 align-items-center justify-content-between"
+            >
+              <!-- Image -->
+              <div class="typeOf-marketPlace-content">
+                <img
+                  class="w-100"
+                  src="./res/Marketplace_banner.png"
+                  alt="Marketplace_banner"
+                />
+              </div>
+              <!-- Description -->
+              <div
+                class="typeOf-marketPlace-content rounded-3 py-4 shadow-created px-4"
+              >
+                <div class="pb-2">
+                  <h5 class="text-capitalize fw-semibold fs-6">
+                    Product Marketplace
+                  </h5>
+                  <p class="text-sm">
+                    Forget all the hassle of managing tons of products, and
+                    traffic of checkouts. WCMp makes it easy to launch and
+                    maintain a product marketplace with features.
+                  </p>
+                </div>
+                <!-- Benefits List -->
+                <div class="pb-2">
+                  <ul class="list-unstyled ps-0">
+                    <!-- Benefit 1 -->
+                    <li class="d-flex align-items-center column-gap-2 pb-2">
+                      <span class="typeOf-marketPlace-content-points"
+                        ><img src="./res/upperRating.png" alt="upperRating"
+                      /></span>
+                      <p class="mb-0 fw-medium text-base">Benefits</p>
+                    </li>
+                    <!-- Sub-Benefits -->
+                    <li class="d-flex pb-2 column-gap-4 ps-3">
+                      <div class="typeOf-marketPlace-content-points-sub"></div>
+                      <div class="ps-1">
+                        <!-- Sub-Benefit 1 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            Advanced Filtering
+                          </p>
+                        </div>
+                        <!-- Sub-Benefit 2 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            1-click automatic setup
+                          </p>
+                        </div>
+                        <!-- Sub-Benefit 3 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            Customizable colors
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Benefit 2 -->
+                    <li class="d-flex align-items-center column-gap-2 pb-2">
+                      <span class="typeOf-marketPlace-content-points"
+                        ><img src="./res/Target.png" alt="Target"
+                      /></span>
+                      <p class="mb-0 fw-medium text-base">Target</p>
+                    </li>
+                    <!-- Sub-Benefit 2 -->
+                    <li class="d-flex pb-2 column-gap-4 ps-3">
+                      <div class=""></div>
+                      <div class="ps-1">
+                        <p class="pb-2 mb-0 text-sm">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          type setting industry.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Live Example -->
+                <div class="">
+                  <h6 class="text-capitalize fw-semibold text-base">
+                    Live Example
+                  </h6>
+                  <div
+                    class="d-flex flex-md-row flex-column row-gap-1 align-items-center justify-content-between column-gap-1"
+                  >
+                    <!-- Example Image 1 -->
+                    <div class="img-box">
+                      <img
+                        class="w-100"
+                        src="./res/RoundedRectangle4.png"
+                        alt="Rounded Rectangle 4"
+                      />
+                    </div>
+                    <!-- Example Image 2 -->
+                    <div class="img-box">
+                      <img
+                        class="w-100"
+                        src="./res/VectorSmartObject4.png"
+                        alt="Vector Smart Object4"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Know More Button -->
+                <div class="w-fit ms-auto mt-3">
+                  <a
+                    class="py-2 d-flex justify-content-center align-items-center text-base px-4 rounded-1 text-white gap-1 fw-medium text-decoration-none bg-skycss"
+                    href="#"
+                  >
+                    Know More <span><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Other Marketplace Sections (Initially Hidden) -->
+          <div id="RentalMarketplace">
+            <div
+              class="d-flex flex-md-row flex-column gap-4 align-items-center justify-content-between"
+            >
+              <!-- Image -->
+              <div class="typeOf-marketPlace-content">
+                <img
+                  class="w-100"
+                  src="./res/Marketplace_banner.png"
+                  alt="Marketplace_banner"
+                />
+              </div>
+              <!-- Description -->
+              <div
+                class="typeOf-marketPlace-content rounded-3 py-4 shadow-created px-4"
+              >
+                <div class="pb-2">
+                  <h5 class="text-capitalize fw-semibold fs-6">
+                    Rental Marketplace
+                  </h5>
+                  <p class="text-sm">
+                    Forget all the hassle of managing tons of products, and
+                    traffic of checkouts. WCMp makes it easy to launch and
+                    maintain a product marketplace with features.
+                  </p>
+                </div>
+                <!-- Benefits List -->
+                <div class="pb-2">
+                  <ul class="list-unstyled ps-0">
+                    <!-- Benefit 1 -->
+                    <li class="d-flex align-items-center column-gap-2 pb-2">
+                      <span class="typeOf-marketPlace-content-points"
+                        ><img src="./res/upperRating.png" alt="upperRating"
+                      /></span>
+                      <p class="mb-0 fw-medium text-base">Benefits</p>
+                    </li>
+                    <!-- Sub-Benefits -->
+                    <li class="d-flex pb-2 column-gap-4 ps-3">
+                      <div class="typeOf-marketPlace-content-points-sub"></div>
+                      <div class="ps-1">
+                        <!-- Sub-Benefit 1 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            Advanced Filtering
+                          </p>
+                        </div>
+                        <!-- Sub-Benefit 2 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            1-click automatic setup
+                          </p>
+                        </div>
+                        <!-- Sub-Benefit 3 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            Customizable colors
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Benefit 2 -->
+                    <li class="d-flex align-items-center column-gap-2 pb-2">
+                      <span class="typeOf-marketPlace-content-points"
+                        ><img src="./res/Target.png" alt="Target"
+                      /></span>
+                      <p class="mb-0 fw-medium text-base">Target</p>
+                    </li>
+                    <!-- Sub-Benefit 2 -->
+                    <li class="d-flex pb-2 column-gap-4 ps-3">
+                      <div class=""></div>
+                      <div class="ps-1">
+                        <p class="pb-2 mb-0 text-sm">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          type setting industry.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Live Example -->
+                <div class="">
+                  <h6 class="text-capitalize fw-semibold text-base">
+                    Live Example
+                  </h6>
+                  <div
+                    class="d-flex flex-md-row flex-column row-gap-1 align-items-center justify-content-between column-gap-1"
+                  >
+                    <!-- Example Image 1 -->
+                    <div class="img-box">
+                      <img
+                        class="w-100"
+                        src="./res/RoundedRectangle4.png"
+                        alt="Rounded Rectangle 4"
+                      />
+                    </div>
+                    <!-- Example Image 2 -->
+                    <div class="img-box">
+                      <img
+                        class="w-100"
+                        src="./res/VectorSmartObject4.png"
+                        alt="Vector Smart Object4"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Know More Button -->
+                <div class="w-fit ms-auto mt-3">
+                  <a
+                    class="py-2 d-flex justify-content-center align-items-center text-base px-4 rounded-1 text-white gap-1 fw-medium text-decoration-none bg-skycss"
+                    href="#"
+                  >
+                    Know More <span><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="BookingMarketplace">
+            <div
+              class="d-flex flex-md-row flex-column gap-4 align-items-center justify-content-between"
+            >
+              <!-- Image -->
+              <div class="typeOf-marketPlace-content">
+                <img
+                  class="w-100"
+                  src="./res/Marketplace_banner.png"
+                  alt="Marketplace_banner"
+                />
+              </div>
+              <!-- Description -->
+              <div
+                class="typeOf-marketPlace-content rounded-3 py-4 shadow-created px-4"
+              >
+                <div class="pb-2">
+                  <h5 class="text-capitalize fw-semibold fs-6">
+                    Booking Marketplace
+                  </h5>
+                  <p class="text-sm">
+                    Forget all the hassle of managing tons of products, and
+                    traffic of checkouts. WCMp makes it easy to launch and
+                    maintain a product marketplace with features.
+                  </p>
+                </div>
+                <!-- Benefits List -->
+                <div class="pb-2">
+                  <ul class="list-unstyled ps-0">
+                    <!-- Benefit 1 -->
+                    <li class="d-flex align-items-center column-gap-2 pb-2">
+                      <span class="typeOf-marketPlace-content-points"
+                        ><img src="./res/upperRating.png" alt="upperRating"
+                      /></span>
+                      <p class="mb-0 fw-medium text-base">Benefits</p>
+                    </li>
+                    <!-- Sub-Benefits -->
+                    <li class="d-flex pb-2 column-gap-4 ps-3">
+                      <div class="typeOf-marketPlace-content-points-sub"></div>
+                      <div class="ps-1">
+                        <!-- Sub-Benefit 1 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            Advanced Filtering
+                          </p>
+                        </div>
+                        <!-- Sub-Benefit 2 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            1-click automatic setup
+                          </p>
+                        </div>
+                        <!-- Sub-Benefit 3 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            Customizable colors
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Benefit 2 -->
+                    <li class="d-flex align-items-center column-gap-2 pb-2">
+                      <span class="typeOf-marketPlace-content-points"
+                        ><img src="./res/Target.png" alt="Target"
+                      /></span>
+                      <p class="mb-0 fw-medium text-base">Target</p>
+                    </li>
+                    <!-- Sub-Benefit 2 -->
+                    <li class="d-flex pb-2 column-gap-4 ps-3">
+                      <div class=""></div>
+                      <div class="ps-1">
+                        <p class="pb-2 mb-0 text-sm">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          type setting industry.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Live Example -->
+                <div class="">
+                  <h6 class="text-capitalize fw-semibold text-base">
+                    Live Example
+                  </h6>
+                  <div
+                    class="d-flex flex-md-row flex-column row-gap-1 align-items-center justify-content-between column-gap-1"
+                  >
+                    <!-- Example Image 1 -->
+                    <div class="img-box">
+                      <img
+                        class="w-100"
+                        src="./res/RoundedRectangle4.png"
+                        alt="Rounded Rectangle 4"
+                      />
+                    </div>
+                    <!-- Example Image 2 -->
+                    <div class="img-box">
+                      <img
+                        class="w-100"
+                        src="./res/VectorSmartObject4.png"
+                        alt="Vector Smart Object4"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Know More Button -->
+                <div class="w-fit ms-auto mt-3">
+                  <a
+                    class="py-2 d-flex justify-content-center align-items-center text-base px-4 rounded-1 text-white gap-1 fw-medium text-decoration-none bg-skycss"
+                    href="#"
+                  >
+                    Know More <span><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="SubscriptionMarketplace">
+            <div
+              class="d-flex flex-md-row flex-column gap-4 align-items-center justify-content-between"
+            >
+              <!-- Image -->
+              <div class="typeOf-marketPlace-content">
+                <img
+                  class="w-100"
+                  src="./res/Marketplace_banner.png"
+                  alt="Marketplace_banner"
+                />
+              </div>
+              <!-- Description -->
+              <div
+                class="typeOf-marketPlace-content rounded-3 py-4 shadow-created px-4"
+              >
+                <div class="pb-2">
+                  <h5 class="text-capitalize fw-semibold fs-6">
+                    Subscription Marketplace
+                  </h5>
+                  <p class="text-sm">
+                    Forget all the hassle of managing tons of products, and
+                    traffic of checkouts. WCMp makes it easy to launch and
+                    maintain a product marketplace with features.
+                  </p>
+                </div>
+                <!-- Benefits List -->
+                <div class="pb-2">
+                  <ul class="list-unstyled ps-0">
+                    <!-- Benefit 1 -->
+                    <li class="d-flex align-items-center column-gap-2 pb-2">
+                      <span class="typeOf-marketPlace-content-points"
+                        ><img src="./res/upperRating.png" alt="upperRating"
+                      /></span>
+                      <p class="mb-0 fw-medium text-base">Benefits</p>
+                    </li>
+                    <!-- Sub-Benefits -->
+                    <li class="d-flex pb-2 column-gap-4 ps-3">
+                      <div class="typeOf-marketPlace-content-points-sub"></div>
+                      <div class="ps-1">
+                        <!-- Sub-Benefit 1 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            Advanced Filtering
+                          </p>
+                        </div>
+                        <!-- Sub-Benefit 2 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            1-click automatic setup
+                          </p>
+                        </div>
+                        <!-- Sub-Benefit 3 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            Customizable colors
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Benefit 2 -->
+                    <li class="d-flex align-items-center column-gap-2 pb-2">
+                      <span class="typeOf-marketPlace-content-points"
+                        ><img src="./res/Target.png" alt="Target"
+                      /></span>
+                      <p class="mb-0 fw-medium text-base">Target</p>
+                    </li>
+                    <!-- Sub-Benefit 2 -->
+                    <li class="d-flex pb-2 column-gap-4 ps-3">
+                      <div class=""></div>
+                      <div class="ps-1">
+                        <p class="pb-2 mb-0 text-sm">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          type setting industry.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Live Example -->
+                <div class="">
+                  <h6 class="text-capitalize fw-semibold text-base">
+                    Live Example
+                  </h6>
+                  <div
+                    class="d-flex flex-md-row flex-column row-gap-1 align-items-center justify-content-between column-gap-1"
+                  >
+                    <!-- Example Image 1 -->
+                    <div class="img-box">
+                      <img
+                        class="w-100"
+                        src="./res/RoundedRectangle4.png"
+                        alt="Rounded Rectangle 4"
+                      />
+                    </div>
+                    <!-- Example Image 2 -->
+                    <div class="img-box">
+                      <img
+                        class="w-100"
+                        src="./res/VectorSmartObject4.png"
+                        alt="Vector Smart Object4"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Know More Button -->
+                <div class="w-fit ms-auto mt-3">
+                  <a
+                    class="py-2 d-flex justify-content-center align-items-center text-base px-4 rounded-1 text-white gap-1 fw-medium text-decoration-none bg-skycss"
+                    href="#"
+                  >
+                    Know More <span><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="More">
+            <div
+              class="d-flex flex-md-row flex-column gap-4 align-items-center justify-content-between"
+            >
+              <!-- Image -->
+              <div class="typeOf-marketPlace-content">
+                <img
+                  class="w-100"
+                  src="./res/Marketplace_banner.png"
+                  alt="Marketplace_banner"
+                />
+              </div>
+              <!-- Description -->
+              <div
+                class="typeOf-marketPlace-content rounded-3 py-4 shadow-created px-4"
+              >
+                <div class="pb-2">
+                  <h5 class="text-capitalize fw-semibold fs-6">More</h5>
+                  <p class="text-sm">
+                    Forget all the hassle of managing tons of products, and
+                    traffic of checkouts. WCMp makes it easy to launch and
+                    maintain a product marketplace with features.
+                  </p>
+                </div>
+                <!-- Benefits List -->
+                <div class="pb-2">
+                  <ul class="list-unstyled ps-0">
+                    <!-- Benefit 1 -->
+                    <li class="d-flex align-items-center column-gap-2 pb-2">
+                      <span class="typeOf-marketPlace-content-points"
+                        ><img src="./res/upperRating.png" alt="upperRating"
+                      /></span>
+                      <p class="mb-0 fw-medium text-base">Benefits</p>
+                    </li>
+                    <!-- Sub-Benefits -->
+                    <li class="d-flex pb-2 column-gap-4 ps-3">
+                      <div class="typeOf-marketPlace-content-points-sub"></div>
+                      <div class="ps-1">
+                        <!-- Sub-Benefit 1 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            Advanced Filtering
+                          </p>
+                        </div>
+                        <!-- Sub-Benefit 2 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            1-click automatic setup
+                          </p>
+                        </div>
+                        <!-- Sub-Benefit 3 -->
+                        <div
+                          class="d-flex align-items-center pb-2 justify-content-start"
+                        >
+                          <span class="box"></span>
+                          <p class="mb-0 text-sm fw-medium">
+                            Customizable colors
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Benefit 2 -->
+                    <li class="d-flex align-items-center column-gap-2 pb-2">
+                      <span class="typeOf-marketPlace-content-points"
+                        ><img src="./res/Target.png" alt="Target"
+                      /></span>
+                      <p class="mb-0 fw-medium text-base">Target</p>
+                    </li>
+                    <!-- Sub-Benefit 2 -->
+                    <li class="d-flex pb-2 column-gap-4 ps-3">
+                      <div class=""></div>
+                      <div class="ps-1">
+                        <p class="pb-2 mb-0 text-sm">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          type setting industry.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Live Example -->
+                <div class="">
+                  <h6 class="text-capitalize fw-semibold text-base">
+                    Live Example
+                  </h6>
+                  <div
+                    class="d-flex flex-md-row flex-column row-gap-1 align-items-center justify-content-between column-gap-1"
+                  >
+                    <!-- Example Image 1 -->
+                    <div class="img-box">
+                      <img
+                        class="w-100"
+                        src="./res/RoundedRectangle4.png"
+                        alt="Rounded Rectangle 4"
+                      />
+                    </div>
+                    <!-- Example Image 2 -->
+                    <div class="img-box">
+                      <img
+                        class="w-100"
+                        src="./res/VectorSmartObject4.png"
+                        alt="Vector Smart Object4"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Know More Button -->
+                <div class="w-fit ms-auto mt-3">
+                  <a
+                    class="py-2 d-flex justify-content-center align-items-center text-base px-4 rounded-1 text-white gap-1 fw-medium text-decoration-none bg-skycss"
+                    href="#"
+                  >
+                    Know More <span><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-5 testimonial">
+      <div class="container">
+        <!-- Heading -->
+        <h1 class="text-capitalize text-center text-white heading">
+          Client
+          <span class="fw-semibold">Testimonials</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-center text-base fw-medium text-white pb-4">
+          Get inspired by others who have made it big with WCMp
+        </p>
+
+        <!-- Testimonial Slider -->
+        <div class="pb-3">
+          <div class="testimonial-height">
+            <!-- Swiper Slider -->
+            <div class="swiper mySwiper h-100">
+              <div class="swiper-wrapper">
+                <!-- Testimonial Slide -->
+                <div class="swiper-slide h-100">
+                  <!-- Testimonial Content -->
+                  <div
+                    class="d-flex align-items-center justify-content-center column-gap-3 row-gap-3 flex-lg-row flex-column w-100 h-100 p-1"
+                  >
+                    <!-- Testimonial Image Container -->
+                    <div class="h-100 testimonial-content d-flex">
+                      <div class="position-relative testimonial-img-main">
+                        <!-- Background Image -->
+                        <img
+                          class="testimonial-img"
+                          src="./res/Site.png"
+                          alt=""
+                        />
+                        <!-- User Avatar -->
+                        <div class="testimonial-user overflow-hidden">
+                          <img
+                            class="h-100 w-100 object-fit-cover"
+                            src="./res/avater.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Testimonial Text Content -->
+                    <div
+                      class="testimonial-content h-100 d-flex justify-content-center flex-column text-white"
+                    >
+                      <h6 class="fw-semibold text-base mb-0">Tim Savage</h6>
+                      <p class="fw-light text-sm mb-0 my-3">
+                        Owner, xyz private Limited
+                      </p>
+                      <p class="fw-light text-sm my-3 lh-lg test-para">
+                        <!-- Testimonial Paragraph -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Cumque repellat omnis perspiciatis harum! Quas
+                        laboriosam quis magnam voluptates molestias libero
+                        excepturi, sequi iusto vero doloremque expedita sunt
+                        consectetur temporibus adipisci laborum soluta aliquam
+                        ad quo voluptatum rerum, sint assumenda! Totam rerum non
+                        explicabo minus error optio, provident autem magnam?
+                        Facere!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Slide -->
+                <div class="swiper-slide h-100">
+                  <!-- Testimonial Content -->
+                  <div
+                    class="d-flex align-items-center justify-content-center column-gap-3 row-gap-3 flex-lg-row flex-column w-100 h-100 p-1"
+                  >
+                    <!-- Testimonial Image Container -->
+                    <div class="h-100 testimonial-content d-flex">
+                      <div class="position-relative testimonial-img-main">
+                        <!-- Background Image -->
+                        <img
+                          class="testimonial-img"
+                          src="./res/Site.png"
+                          alt=""
+                        />
+                        <!-- User Avatar -->
+                        <div class="testimonial-user overflow-hidden">
+                          <img
+                            class="h-100 w-100 object-fit-cover"
+                            src="./res/avater.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Testimonial Text Content -->
+                    <div
+                      class="testimonial-content h-100 d-flex justify-content-center flex-column text-white"
+                    >
+                      <h6 class="fw-semibold text-base mb-0">Tim Savage</h6>
+                      <p class="fw-light text-sm mb-0 my-3">
+                        Owner, xyz private Limited
+                      </p>
+                      <p class="fw-light text-sm my-3 lh-lg test-para">
+                        <!-- Testimonial Paragraph -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Cumque repellat omnis perspiciatis harum! Quas
+                        laboriosam quis magnam voluptates molestias libero
+                        excepturi, sequi iusto vero doloremque expedita sunt
+                        consectetur temporibus adipisci laborum soluta aliquam
+                        ad quo voluptatum rerum, sint assumenda! Totam rerum non
+                        explicabo minus error optio, provident autem magnam?
+                        Facere!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Slide -->
+                <div class="swiper-slide h-100">
+                  <!-- Testimonial Content -->
+                  <div
+                    class="d-flex align-items-center justify-content-center column-gap-3 row-gap-3 flex-lg-row flex-column w-100 h-100 p-1"
+                  >
+                    <!-- Testimonial Image Container -->
+                    <div class="h-100 testimonial-content d-flex">
+                      <div class="position-relative testimonial-img-main">
+                        <!-- Background Image -->
+                        <img
+                          class="testimonial-img"
+                          src="./res/Site.png"
+                          alt=""
+                        />
+                        <!-- User Avatar -->
+                        <div class="testimonial-user overflow-hidden">
+                          <img
+                            class="h-100 w-100 object-fit-cover"
+                            src="./res/avater.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Testimonial Text Content -->
+                    <div
+                      class="testimonial-content h-100 d-flex justify-content-center flex-column text-white"
+                    >
+                      <h6 class="fw-semibold text-base mb-0">Tim Savage</h6>
+                      <p class="fw-light text-sm mb-0 my-3">
+                        Owner, xyz private Limited
+                      </p>
+                      <p class="fw-light text-sm my-3 lh-lg test-para">
+                        <!-- Testimonial Paragraph -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Cumque repellat omnis perspiciatis harum! Quas
+                        laboriosam quis magnam voluptates molestias libero
+                        excepturi, sequi iusto vero doloremque expedita sunt
+                        consectetur temporibus adipisci laborum soluta aliquam
+                        ad quo voluptatum rerum, sint assumenda! Totam rerum non
+                        explicabo minus error optio, provident autem magnam?
+                        Facere!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Slide -->
+                <div class="swiper-slide h-100">
+                  <!-- Testimonial Content -->
+                  <div
+                    class="d-flex align-items-center justify-content-center column-gap-3 row-gap-3 flex-lg-row flex-column w-100 h-100 p-1"
+                  >
+                    <!-- Testimonial Image Container -->
+                    <div class="h-100 testimonial-content d-flex">
+                      <div class="position-relative testimonial-img-main">
+                        <!-- Background Image -->
+                        <img
+                          class="testimonial-img"
+                          src="./res/Site.png"
+                          alt=""
+                        />
+                        <!-- User Avatar -->
+                        <div class="testimonial-user overflow-hidden">
+                          <img
+                            class="h-100 w-100 object-fit-cover"
+                            src="./res/avater.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Testimonial Text Content -->
+                    <div
+                      class="testimonial-content h-100 d-flex justify-content-center flex-column text-white"
+                    >
+                      <h6 class="fw-semibold text-base mb-0">Tim Savage</h6>
+                      <p class="fw-light text-sm mb-0 my-3">
+                        Owner, xyz private Limited
+                      </p>
+                      <p class="fw-light text-sm my-3 lh-lg test-para">
+                        <!-- Testimonial Paragraph -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Cumque repellat omnis perspiciatis harum! Quas
+                        laboriosam quis magnam voluptates molestias libero
+                        excepturi, sequi iusto vero doloremque expedita sunt
+                        consectetur temporibus adipisci laborum soluta aliquam
+                        ad quo voluptatum rerum, sint assumenda! Totam rerum non
+                        explicabo minus error optio, provident autem magnam?
+                        Facere!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Slide -->
+                <div class="swiper-slide h-100">
+                  <!-- Testimonial Content -->
+                  <div
+                    class="d-flex align-items-center justify-content-center column-gap-3 row-gap-3 flex-lg-row flex-column w-100 h-100 p-1"
+                  >
+                    <!-- Testimonial Image Container -->
+                    <div class="h-100 testimonial-content d-flex">
+                      <div class="position-relative testimonial-img-main">
+                        <!-- Background Image -->
+                        <img
+                          class="testimonial-img"
+                          src="./res/Site.png"
+                          alt=""
+                        />
+                        <!-- User Avatar -->
+                        <div class="testimonial-user overflow-hidden">
+                          <img
+                            class="h-100 w-100 object-fit-cover"
+                            src="./res/avater.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Testimonial Text Content -->
+                    <div
+                      class="testimonial-content h-100 d-flex justify-content-center flex-column text-white"
+                    >
+                      <h6 class="fw-semibold text-base mb-0">Tim Savage</h6>
+                      <p class="fw-light text-sm mb-0 my-3">
+                        Owner, xyz private Limited
+                      </p>
+                      <p class="fw-light text-sm my-3 lh-lg test-para">
+                        <!-- Testimonial Paragraph -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Cumque repellat omnis perspiciatis harum! Quas
+                        laboriosam quis magnam voluptates molestias libero
+                        excepturi, sequi iusto vero doloremque expedita sunt
+                        consectetur temporibus adipisci laborum soluta aliquam
+                        ad quo voluptatum rerum, sint assumenda! Totam rerum non
+                        explicabo minus error optio, provident autem magnam?
+                        Facere!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="pt-3">
+          <!-- Achievements Heading -->
+          <h3
+            class="text-base text-white d-flex align-items-center justify-content-center column-gap-2 pb-2"
+          >
+            <span class="fs-5"><i class="bi bi-trophy"></i></span>Achieved in
+            Online Marketplace
+          </h3>
+          <!-- Achievements Stats -->
+          <div
+            class="d-flex align-items-center justify-content-center column-gap-2 row-gap-2 flex-wrap"
+          >
+            <!-- Stat Block 1 -->
+            <div
+              style="width: 160px"
+              class="bg-white px-4 py-3 rounded-2 d-flex align-items-center justify-content-center column-gap-3"
+            >
+              <div class="p-2 bg-orangelow-css rounded-1">
+                <img src="./res/VectorSmartObject1.png" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-6 fw-bold mb-0">3476</h3>
+                <p class="text-sm mb-0">Products</p>
+              </div>
+            </div>
+            <!-- Stat Block 2 -->
+            <div
+              style="width: 160px"
+              class="bg-white px-4 py-3 rounded-2 d-flex align-items-center justify-content-center column-gap-3"
+            >
+              <div class="p-2 bg-orangelow-css rounded-1">
+                <img src="./res/VectorSmartObject2.png" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-6 fw-bold mb-0">251</h3>
+                <p class="text-sm mb-0">Locations</p>
+              </div>
+            </div>
+            <!-- Stat Block 3 -->
+            <div
+              style="width: 160px"
+              class="bg-white px-4 py-3 rounded-2 d-flex align-items-center justify-content-center column-gap-3"
+            >
+              <div class="p-2 bg-orangelow-css rounded-1">
+                <img src="./res/VectorSmartObject3.png" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-6 fw-bold mb-0">965</h3>
+                <p class="text-sm mb-0">Categories</p>
+              </div>
+            </div>
+            <!-- Stat Block 4 -->
+            <div
+              style="width: 160px"
+              class="bg-white px-4 py-3 rounded-2 d-flex align-items-center justify-content-center column-gap-3"
+            >
+              <div class="p-2 bg-orangelow-css rounded-1">
+                <img src="./res/VectorSmartObject5.png" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-6 fw-bold mb-0">15021</h3>
+                <p class="text-sm mb-0">Customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="py-5 featured">
+      <div class="container">
+        <h1 class="text-capitalize text-center heading">
+          Our
+          <span class="fw-semibold">Best Featured</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-center text-base fw-medium pb-4">
+          Now you can build any marketplace with WCMp
+        </p>
+        <div
+          class="d-flex mb-4 align-items-center justify-content-center flex-column flex-md-row column-gap-3 row-gap-3"
+        >
+          <div class="featured-content justify-content-center">
+            <h5 class="fs-5 fw-semibold">Product Management</h5>
+            <div
+              class="d-flex align-items-center my-3 flex-wrap justify-content-start w-fit text-sm row-gap-2 column-gap-2"
+            >
+              <p class="mb-0 fw-semibold opacity-50">Available for</p>
+              <p
+                class="mb-0 py-1 px-3 text-orangeCss rounded-5 bg-orangelow-css"
+              >
+                Administrator
+              </p>
+              <p
+                class="mb-0 py-1 px-3 text-purpleCss rounded-5 bg-purplelow-css"
+              >
+                Vendor
+              </p>
+              <p class="mb-0 py-1 px-3 text-darkSkyCss rounded-5 bg-skylow-css">
+                Customer
+              </p>
+            </div>
+            <p style="max-width: 500px" class="mt-2 mb-4 text-xs">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus corrupti voluptatibus enim dicta eius quisquam
+              assumenda placeat excepturi est quis!
+            </p>
+            <h5 class="text-base mb-3 fw-semibold">
+              Lorem ipsum dolor sit amet consectetur
+            </h5>
+            <div class="d-flex row-gap-3 flex-column">
+              <div class="d-flex column-gap-3">
+                <div
+                  style="width: 167px"
+                  class="d-flex align-items-center column-gap-1"
+                >
+                  <div class="box"></div>
+                  <div class="text-xs fw-semibold">Subcription MarketPlace</div>
+                </div>
+                <div
+                  style="width: 167px"
+                  class="d-flex align-items-center column-gap-1"
+                >
+                  <div class="box"></div>
+                  <div class="text-xs fw-semibold">Physical MarketPlace</div>
+                </div>
+              </div>
+              <div class="d-flex column-gap-3">
+                <div
+                  style="width: 167px"
+                  class="d-flex align-items-center column-gap-1"
+                >
+                  <div class="box"></div>
+                  <div class="text-xs fw-semibold">Variable MarketPlace</div>
+                </div>
+                <div
+                  style="width: 167px"
+                  class="d-flex align-items-center column-gap-1"
+                >
+                  <div class="box"></div>
+                  <div class="text-xs fw-semibold">Static MarketPlace</div>
+                </div>
+              </div>
+              <div class="d-flex column-gap-3">
+                <div
+                  style="width: 167px"
+                  class="d-flex align-items-center column-gap-1"
+                >
+                  <div class="box"></div>
+                  <div class="text-xs fw-semibold">Booking MarketPlace</div>
+                </div>
+                <div
+                  style="width: 167px"
+                  class="d-flex align-items-center column-gap-1"
+                >
+                  <div class="box"></div>
+                  <div class="text-xs fw-semibold">Rental MarketPlace</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-content">
+            <img
+              class="w-100 object-fit-contain"
+              src="./res/featured1.png"
+              alt="Featured"
+            />
+          </div>
+        </div>
+        <div
+          class="d-flex mb-4 align-items-center justify-content-center flex-column flex-md-row column-gap-3 row-gap-3"
+        >
+          <div class="featured-content">
+            <img
+              class="w-100 object-fit-contain"
+              src="./res/featured2.png"
+              alt="Featured"
+            />
+          </div>
+          <div class="featured-content justify-content-center">
+            <h5 class="fs-5 fw-semibold">Order Management</h5>
+            <div
+              class="d-flex align-items-center my-3 flex-wrap justify-content-start w-fit text-sm row-gap-2 column-gap-2"
+            >
+              <p class="mb-0 fw-semibold opacity-50">Available for</p>
+              <p
+                class="mb-0 py-1 px-3 text-orangeCss rounded-5 bg-orangelow-css"
+              >
+                Administrator
+              </p>
+              <p
+                class="mb-0 py-1 px-3 text-purpleCss rounded-5 bg-purplelow-css"
+              >
+                Vendor
+              </p>
+              <p class="mb-0 py-1 px-3 text-darkSkyCss rounded-5 bg-skylow-css">
+                Customer
+              </p>
+            </div>
+            <p style="max-width: 500px" class="mt-2 mb-4 text-xs">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus corrupti voluptatibus enim dicta eius quisquam
+              assumenda placeat excepturi est quis!
+            </p>
+            <h5 class="text-base mb-3 fw-semibold">
+              Lorem ipsum dolor sit amet consectetur
+            </h5>
+            <div class="d-flex row-gap-3 flex-column">
+              <div class="d-flex column-gap-2">
+                <div class="box"></div>
+                <div>
+                  <h5 class="text-sm mb-1">Subcription MarketPlace</h5>
+                  <p class="mb-0 text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, totam?
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex column-gap-2">
+                <div class="box"></div>
+                <div>
+                  <h5 class="text-sm mb-1">Booking MarketPlace</h5>
+                  <p class="mb-0 text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, totam?
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex column-gap-2">
+                <div class="box"></div>
+                <div>
+                  <h5 class="text-sm mb-1">Rental MarketPlace</h5>
+                  <p class="mb-0 text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, totam?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex mb-3 align-items-center justify-content-center flex-column flex-md-row column-gap-3 row-gap-3"
+        >
+          <div class="featured-content justify-content-center">
+            <h5 class="fs-5 fw-semibold">Site Security</h5>
+            <div
+              class="d-flex align-items-center my-3 flex-wrap justify-content-start w-fit text-sm row-gap-2 column-gap-2"
+            >
+              <p class="mb-0 fw-semibold opacity-50">Available for</p>
+              <p
+                class="mb-0 py-1 px-3 text-orangeCss rounded-5 bg-orangelow-css"
+              >
+                Administrator
+              </p>
+              <p
+                class="mb-0 py-1 px-3 text-purpleCss rounded-5 bg-purplelow-css"
+              >
+                Vendor
+              </p>
+              <p class="mb-0 py-1 px-3 text-darkSkyCss rounded-5 bg-skylow-css">
+                Customer
+              </p>
+            </div>
+            <p style="max-width: 500px" class="mt-2 mb-4 text-xs lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio omnis ducimus eum earum nesciunt, assumenda officiis
+              dolorem sequi commodi odio? Alias sit dolores iusto architecto
+              quas suscipit. Itaque aliquam earum sed animi minus distinctio?
+              Reprehenderit optio sint, adipisci culpa expedita dolor, illum
+              veniam molestiae, eos quibusdam iusto iure enim exercitationem.
+            </p>
+          </div>
+          <div class="featured-content">
+            <img
+              class="w-100 object-fit-contain"
+              src="./res/featured1.png"
+              alt="Featured"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5 pricing">
+      <div class="container">
+        <h1 class="text-capitalize text-center heading">
+          Find the Right Plan for
+          <span class="fw-semibold">Your Marketplace</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-center text-base fw-medium pb-4">
+          Lorem Ipsum is simply dummy text of the printing.
+        </p>
+        <div
+          class="d-flex pb-5 align-items-center justify-content-center column-gap-1"
+        >
+          <p class="mb-0 text-base fw-medium">Monthly</p>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <p class="mb-0 text-base fw-medium">Yearly</p>
+        </div>
+        <div class="price-card-content">
+          <div class="price-card">
+            <h5 class="fw-semibold fs-6">Basic</h5>
+            <div class="d-flex align-items-end column-gap-1 mb-3">
+              <small class="text-xs fw-medium">Form</small>
+              <p class="mb-0 fs-3 lh-1 fw-semibold">$59</p>
+              <small class="text-xs fw-medium">/ mo</small>
+            </div>
+            <p class="text-xs fw-medium">Billed yearly @708</p>
+            <hr />
+            <p class="text-sm fw-semibold">All standard features included:</p>
+            <div class="mt-3 mb-5">
+              <ul class="list-unstyled">
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    All standard features included:
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Text of the printing and type setting industry lorem Ipsum
+                    has been industry.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Dummy text ever since the 1500s
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    When an unknown printer took a galley.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    WordPress integration
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Unknown printer took a galley.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Unknown printer took a galley. <br />
+                    <br />
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    It has survived not only five centuries.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    WordPress integration.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <a
+              class="py-2 mx-auto w-fit d-block border border-black text-base w-fit px-4 rounded-1 text-black fw-medium text-decoration-none"
+              href="#"
+            >
+              Get Started
+            </a>
+          </div>
+          <div class="price-card">
+            <div class="d-flex justify-content-between">
+              <h5 class="fw-semibold fs-6">Standard</h5>
+              <span
+                class="px-3 py-1 bg-success rounded-5 text-xs fw-medium text-white"
+                >Popular</span
+              >
+            </div>
+            <div class="d-flex align-items-end column-gap-1 mb-3">
+              <small class="text-xs fw-medium">Form</small>
+              <p class="mb-0 fs-3 lh-1 fw-semibold">$90</p>
+              <small class="text-xs fw-medium">/ mo</small>
+            </div>
+            <p class="text-xs fw-medium">Billed yearly @1080</p>
+            <hr />
+            <p class="text-sm fw-semibold">All standard features included:</p>
+            <div class="mt-3 mb-5">
+              <ul class="list-unstyled">
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    All standard features included:
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Text of the printing and type setting industry lorem Ipsum
+                    has been industry.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Dummy text ever since the 1500s
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    When an unknown printer took a galley.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    WordPress integration
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Unknown printer took a galley.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Unknown printer took a galley. <br />
+                    <br />
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    It has survived not only five centuries.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    WordPress integration.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <a
+              class="py-2 d-block mx-auto text-base w-fit px-4 bg-orange-css border- rounded-1 text-white fw-medium text-decoration-none"
+              href="#"
+            >
+              Buy Now
+            </a>
+          </div>
+          <div class="price-card">
+            <h5 class="fw-semibold fs-6">Professional</h5>
+            <div class="d-flex align-items-end column-gap-1 mb-3">
+              <small class="text-xs fw-medium">Form</small>
+              <p class="mb-0 fs-3 lh-1 fw-semibold">$349</p>
+              <small class="text-xs fw-medium">/ mo</small>
+            </div>
+            <p class="text-xs fw-medium">Billed yearly @4188</p>
+            <hr />
+            <p class="text-sm fw-semibold">All standard features included:</p>
+            <div class="mt-3 mb-5">
+              <ul class="list-unstyled">
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    All standard features included:
+                    <span
+                      style="font-size: 0.5rem"
+                      class="px-1 bg-skycss rounded-5 fw-normal text-white"
+                      >New</span
+                    >
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Text of the printing and type setting industry lorem Ipsum
+                    has been industry.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Dummy text ever since the 1500s
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    When an unknown printer took a galley.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    WordPress integration
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Unknown printer took a galley.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    Unknown printer took a galley. <br />
+                    <br />
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    It has survived not only five centuries.
+                  </p>
+                </li>
+                <li class="d-flex column-gap-1 mb-3">
+                  <span class="fw-bold text-darkSkyCss lh-1"
+                    ><i class="bi bi-check2"></i
+                  ></span>
+                  <p class="mb-0 text-xs border-bottom">
+                    WordPress integration.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <a
+              class="py-2 mx-auto w-fit d-block border border-black text-base w-fit px-4 rounded-1 text-black fw-medium text-decoration-none"
+              href="#"
+            >
+              Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Satisfied Cusmoter Section -->
+    <section class="py-5 satisfied-cusmoter">
+      <div class="container">
+        <h1 class="text-capitalize text-center heading">
+          Satisfied
+          <span class="fw-semibold">Cusmoter</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-center text-base fw-medium pb-4">
+          Lorem Ipsum is simply dummy text of the printing.
+        </p>
+
+        <div
+          class="mt-3 mb-5 d-flex align-content-center justify-content-center flex-md-row flex-column row-gap-4 column-gap-4"
+        >
+          <div class="satisfied-cusmoter-img">
+            <img
+              class="w-100 h-100 object-fit-cover"
+              src="./res/Videocall1.png"
+              alt=""
+            />
+          </div>
+          <div class="satisfied-cusmoter-img">
+            <img
+              class="w-100 h-100 object-fit-cover"
+              src="./res/Videocall2.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <a
+          class="py-2 mx-auto d-flex justify-content-center border border-black align-items-center text-base w-fit px-4 rounded-1 text-black gap-1 fw-medium text-decoration-none"
+          href="#"
+        >
+          See More Convarsations
+          <span class="lh-1"><i class="bi bi-arrow-right"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="py-5 support">
+      <div class="container">
+        <div class="support-icon mb-4">
+          <img src="./res/Topicon.png" alt="" />
+        </div>
+        <h1 class="fw-semibold text-center fs-4 mb-2">
+          We Are There for You Every Step of the Way
+        </h1>
+        <p class="support-para">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+          velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor
+          nisi elit consequat ipsum,
+        </p>
+        <div class="w-fit mx-auto d-flex gap-2 flex-column flex-md-row">
+          <!-- Primary Action Button -->
+          <a
+            class="py-2 d-flex justify-content-center w-fit px-4 bg-orange-css align-items-center rounded-1 text-white fw-medium text-decoration-none gap-1 text-base"
+            href="#"
+          >
+            How to Get Support <span><i class="bi bi-arrow-right"></i></span>
+          </a>
+
+          <!-- Secondary Action Button -->
+          <a
+            class="py-2 d-flex justify-content-center border border-black align-items-center text-base w-fit px-4 rounded-1 text-black gap-1 fw-medium text-decoration-none"
+            href="#"
+          >
+            How to Get Support <span><i class="bi bi-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-5 blog">
+      <div class="container">
+        <h1 class="text-capitalize text-center heading">
+          Our
+          <span class="fw-semibold">Blog</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-center text-base fw-medium pb-4">
+          Lorem Ipsum is simply dummy text of the printing.
+        </p>
+        <div
+          class="d-flex align-items-center justify-content-between flex-column flex-md-row gap-4"
+        >
+          <div class="blog-content">
+            <img src="./res/blog.png" alt="Blog" />
+          </div>
+          <div class="blog-content d-flex justify-content-center flex-column">
+            <small class="text-xs text-uppercase text-purpleCss fw-medium"
+              >Marketplace</small
+            >
+            <h1 class="fs-4 fw-semibold">
+              Building an any Online Rental Marketplace: The Ultimate Guide
+            </h1>
+            <p class="text-uppercase text-sm opacity-50 my-2 fw-semibold">
+              03 November 2020 * 12 min red
+            </p>
+            <p class="text-sm lh-lg">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestias, a ullam. Modi perferendis itaque quae. Aut, sint iure.
+              Nulla, aperiam quidem! Accusamus, eaque, ab ex suscipit doloribus
+              temporibus eos molestias quaerat fugit minima enim amet optio?
+              Nihil quisquam eius illum?
+            </p>
+            <a
+              class="py-2 mt-3 d-flex justify-content-center w-fit px-4 bg-skycss align-items-center rounded-1 text-white fw-medium text-decoration-none gap-1 text-base"
+              href="#"
+            >
+              Read More
+              <span class="lh-1"><i class="bi bi-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="pt-5 pb-4">
+      <div class="container text-white footer-main">
+        <div class="fotter-content info">
+          <h1 class="text-capitalize heading">
+            WCM<span class="fw-semibold">arketplace</span>
+          </h1>
+
+          <!-- Subheading -->
+          <p style="max-width: 350px; width: 100%;" class="text-xs fw-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut nisi repellendus dolores eveniet fuga consequuntur accusamus laboriosam error amet?
+          </p>
+        </div>
+        <div class="fotter-content quick-links">
+          <h5 class="text-sm fw-medium pb-2 text-white">Quick Links</h5>
+          <ul class="d-flex flex-column row-gap-1 list-unstyled">
+            <li><a class="fw-normal text-xs text-decoration-none text-white" href="#">GDPR</a></li>
+            <li><a class="fw-normal text-xs text-decoration-none text-white" href="#">How to get support</a></li>
+            <li><a class="fw-normal text-xs text-decoration-none text-white" href="#">Privacy Policy</a></li>
+            <li><a class="fw-normal text-xs text-decoration-none text-white" href="#">Licensing Terms</a></li>
+            <li><a class="fw-normal text-xs text-decoration-none text-white" href="#">Refund</a></li>
+          </ul>
+        </div>
+        <div class="fotter-content contact-us">
+          <h5 class="text-sm fw-medium pb-2 text-white">Contact Us</h5>
+          <ul class="d-flex flex-column row-gap-1 list-unstyled">
+            <li class="fw-normal text-xs text-decoration-none text-white pb-1">WC Marketplace, <br>
+              Module #534, Sector V <br>
+              Salt Lake City, Kolkata, India</li>
+            <li class="pb-1"><a class="fw-normal text-xs text-decoration-none text-white" href="mailto:contact@wc-marketplace.com">contact@wc-marketplace.com</a></li>
+            <li class="pb-1 fw-normal text-xs">Have questions? <a class="fw-semibold text-xs text-decoration-none text-white" href="#">Ask here</a></li>
+        </div>
+        <div class="fotter-content subscribe">
+          <h5 class="text-sm fw-medium pb-2 text-white">Subscribe to Our Blog</h5>
+          <ul class="d-flex flex-column row-gap-1 list-unstyled">
+            <li class="fw-normal text-xs text-decoration-none text-white pb-1">We promise, we won't spam you!!</li>
+            <li class="fw-normal text-xs text-decoration-none text-white pb-1"><input type="email" placeholder="Email Address" class="emailAdd"></li>
+          </ul>
+          <a
+          class="py-2 d-block text-base w-fit px-4 bg-orange-css border- rounded-1 text-white fw-medium text-decoration-none"
+          href="#"
+        >
+          Subcribe
+        </a>
+        </div>
+      </div>
+    </footer>
+    <section class="py-3 copyright">
+      <div class="container">
+        <p class="mb-0 text-white text-xs text-end"><i class="bi bi-c-circle"></i> 2020 WC Marketplace. All Rights Reserved.</p>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap JavaScript bundle from a CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Your custom JavaScript file -->
+    <script src="./Js/main.js"></script>
+  </body>
+</html>
